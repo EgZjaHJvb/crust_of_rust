@@ -74,16 +74,11 @@ fn main() {
         Ok(p_len) => p_len,
         Err(err) => {
             eprintln!("Input Error: {}", err);
-            std::process::exit(1);:
+            std::process::exit(1);
         }
     };
     println!("{}", pass_len);
     let pass: String = pass_gen(pass_len);
 
     println!("Your password is {}", pass);
-
-    let out = std::process::Command::new("cr")
-        .arg("")
-
-
 }
